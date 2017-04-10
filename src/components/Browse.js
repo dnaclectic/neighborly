@@ -3,7 +3,7 @@ import { Grid, Jumbotron, Button } from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
 import ItemList from './ItemList';
 import Navigation from './Navigation';
-import { CardColumns, Form, FormGroup, Input, Label, FormFeedback } from "reactstrap";
+import { CardColumns, Form, FormGroup, Input, Label } from "reactstrap";
 import { Flex } from 'reflexbox';
 
 class Browse extends React.Component {

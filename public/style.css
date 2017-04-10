@@ -26,31 +26,31 @@
 
 #navHome {
  font-family: ‘Roboto’, sans-serif;
- font-size: 20px;
+ font-size: 10px;
  float: left;
  color: black;
 }
 #navBrowse {
  font-family: ‘Roboto’, sans-serif;
- font-size: 20px;
+ font-size: 10px;
  float: left;
  color: black;
 }
 #navAccount{
  font-family: ‘Roboto’, sans-serif;
- font-size: 20px;
+ font-size: 10px;
  float: right;
  color: black;
 }
 #navLogin{
  font-family: ‘Roboto’, sans-serif;
- font-size: 20px;
+ font-size: 10px;
  float: right;
  color: black;
 }
 #navNeighbors{
  font-family: ‘Roboto’, sans-serif;
- font-size: 20px;
+ font-size: 10px;
  float: right;
  color: black;
 }
@@ -65,6 +65,7 @@
 #jumbotronSearch, #loginJumbo, #signUpJumbo {
   border-radius: 25px;
   background-color: #F0F1F5;
+  opacity: .5;
 }
 
 #browseSpan {

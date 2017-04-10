@@ -110,7 +110,7 @@ class NewUser extends React.Component {
                   </FormGroup>
 
                   <div>
-                    <Link to ="/Main" ><Button
+                    <Link to ="/" ><Button
                     onClick={this.handleNewUser} onTouchTap={this.handleNewUser}
                     type="submit" className="btn btn-success">Enter</Button></Link>
                   </div>
