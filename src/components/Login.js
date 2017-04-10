@@ -75,53 +75,54 @@ class Login extends React.Component {
       <div style={{paddingTop:"200px"}}>
         <Grid>
           <Flex align="center" justify="center">
-          <Jumbotron id="loginJumbo">
-            <Flex align="center" justify="center">
-              <Form id="loginForm">
-                <span id="spanLogin">{this.state.loginMsg == "" ?
-                 "Please Sign In!":
-                this.state.loginMsg}</span>
+            <Jumbotron id="loginJumbo">
+              <Flex align="center" justify="center">
+                <Form id="loginForm">
+                  <span id="spanLogin">{this.state.loginMsg == "" ?
+                   "Please Sign In!":
+                  this.state.loginMsg}</span>
 
-                <FormGroup>
-                  <Label>Email</Label>
-                  <Input onChange={this.handleEmailChange} value={this.state.email}
-                  type="text" Name="form-control" id="email" placeholder="email address" size="lg"/>
-                </FormGroup>
+                  <FormGroup>
+                    <Label>Email</Label>
+                    <Input onChange={this.handleEmailChange} value={this.state.email}
+                    type="text" Name="form-control" id="email"
+                    placeholder="email address" size="lg"/>
+                  </FormGroup>
 
-                <FormGroup>
-                  <Label>Password</Label>
-                  <Input onChange={this.handlePasswordChange} value={this.state.password}
-                  type="password" Name="form-control" id="password"
-                  placeholder="password" size="lg"/>
-                </FormGroup>
-                <Flex nowrap>
-                  <Box auto col={2} p={2}>
-                    <Link to="/"><Button onClick={this.handleLoginUser}
-                    onTouchTap={this.handleLoginUser} type="submit"
-                    className="btn btn-primary">Sign In</Button></Link>
-                  </Box>
+                  <FormGroup>
+                    <Label>Password</Label>
+                    <Input onChange={this.handlePasswordChange} value={this.state.password}
+                    type="password" Name="form-control" id="password"
+                    placeholder="password" size="lg"/>
+                  </FormGroup>
 
-                  <Box auto col={2} p={2}>
-                    <Link to="/NewUser"><Button  type="submit"
-                    className="btn btn-success">New User?</Button></Link>
-                  </Box>
-                </Flex>
-              </Form>
-            </Flex>
-            <br/>
-            <div style={{textAlign: "center"}}>
-              <FacebookLogin
-              clientID="430615593948853"
-              autoLoad="true"
-              fields="name,email,picture"
-              callback={this.responseFacebook}
-              icon=""
-              textButton = "Login with Facebook"/>
-            </div>
-          </Jumbotron>
+                  <Flex nowrap>
+                    <Box auto col={2} p={2}>
+                      <Link to="/Browse"><Button onClick={this.handleLoginUser}
+                      onTouchTap={this.handleLoginUser} type="submit"
+                      className="btn btn-primary">Sign In</Button></Link>
+                    </Box>
+
+                    <Box auto col={2} p={2}>
+                      <Link to="/NewUser"><Button  type="submit"
+                      className="btn btn-success">New User?</Button></Link>
+                    </Box>
+                  </Flex>
+                </Form>
+              </Flex>
+              <br/>
+              <div style={{textAlign: "center"}}>
+                <FacebookLogin
+                clientID="430615593948853"
+                autoLoad="true"
+                fields="name,email,picture"
+                callback={this.responseFacebook}
+                ico n=""
+                textButton = "Login with Facebook"/>
+              </div>
+            </Jumbotron>
           </Flex>
         </Grid>
-
       </div>
     );
   }
