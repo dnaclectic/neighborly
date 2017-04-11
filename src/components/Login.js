@@ -85,8 +85,7 @@ class Login extends React.Component {
                     </FormGroup>
                     <Flex nowrap>
                       <Box auto col={2} p={2}>
-                        <Link to="/Home"><Button onClick={this.handleLoginUser}
-                        onTouchTap={this.handleLoginUser} type="submit"
+                        <Link to="/Account"><Button onClick={this.handleLoginUser} type="submit"
                         className="btn btn-primary">Sign In</Button></Link>
                       </Box>
                       <Box auto col={2} p={2}>

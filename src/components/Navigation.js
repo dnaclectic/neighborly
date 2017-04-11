@@ -42,11 +42,6 @@ class Navigation extends React.Component {
                     <NavItem id="navAccount">ACCOUNT</NavItem>
                   </LinkContainer>
                 </Box>
-                <Box col={3} p={3}>
-                  <LinkContainer to={{pathname: '/Login'}}>
-                    <NavItem id="navLogin">LOGIN</NavItem>
-                  </LinkContainer>
-                </Box>
               </Flex>
             </Nav>
           </Navbar.Collapse>

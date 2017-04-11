@@ -19,6 +19,11 @@ export default class UserStore {
     });
     this.LoginUser = this.LoginUser.bind(this);
     this.NewUser = this.NewUser.bind(this);
+    this.setUsers = this.setUsers.bind(this);
+  }
+
+  setUsers(users) {
+    this.users = users;
   }
 
   NewUser(email, password, name, neighborhood) {

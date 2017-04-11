@@ -77,11 +77,11 @@ router.route('/user')
     });
   })
   .get(function(req, res, next){
-    User.find().exec(function(err, user){
+    User.find().exec(function(err, users){
       if(err){
         next(err);
       } else {
-        res.json({name: user.name, id: user._id, neighborhood: user.neighborhood});
+        res.json(users);
       }
     });
   });

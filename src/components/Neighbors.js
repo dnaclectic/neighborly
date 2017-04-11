@@ -8,15 +8,24 @@ import { CardColumns } from "reactstrap";
 class Neighbors extends React.Component {
   constructor(props) {
     super(props);
-    this.loadUserFromServer = this.loadUserFromServer.bind(this);
+    this.state = {users:[]};
+    this.loadUsersFromServer = this.loadUsersFromServer.bind(this);
   }
 
+  componentDidMount() {
+    this.loadUsersFromServer();
+  }
 
-  loadUserFromServer() {
+  loadUsersFromServer() {
     fetch('/user')
       .then(function(result) {return result.json();})
-      .then(user => this.props.userStore.newUser(user));
+      .then(users => {
+        console.log(users);
+        this.setState({users:users});
+      }
+    );
   }
+
 
   render() {
     return (
@@ -29,7 +38,7 @@ class Neighbors extends React.Component {
           <Grid>
             <Jumbotron style={{ backgroundColor: '#D1D5D8' }}>
               <CardColumns>
-                <NeighborsList users={this.props.userStore.id}/>
+                <NeighborsList users={this.state.users}/>
               </CardColumns>
             </Jumbotron>
           </Grid>

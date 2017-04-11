@@ -1,6 +1,6 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
-import { Card,  CardImg , Button} from "reactstrap";
+import { Card,  CardImg } from "reactstrap";
 import '../../public/style.css';
 
 ItemList.propTypes = {
@@ -24,7 +24,6 @@ function ItemList(props) {
           <h4 id="cardText">Condition: {item.condition}</h4>
           <div id="itemOwner">{addedBy}
           <h5><a href={"mailto:" + [emailOwner]}>Email the Owner</a></h5>
-
           </div>
         </Card>
       </Card>

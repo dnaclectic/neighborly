@@ -79,18 +79,11 @@
 }
 
 #loginForm {
-  font-size: 2.0vw;
+  font-size: 1.0vw;
 }
 
 #signUpForm {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.flexcontainer {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
+  font-size: 1.0vw;
 }
 
 .flexcontainer {
@@ -100,24 +93,31 @@
   flex-direction: row;
 }
 
-#signUpJumbo {
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+#jumbotronSearch {
+  background-color: rgba(179, 231, 193, 0.6);
   border-radius: 25px;
   max-width: 80%;
 }
 
-#jumbotronSearch {
-  width: 100vw;
-  margin-top: 10%;
+#signUpJumbo {
+  background-color: rgba(179, 231, 193, 0.6);
+  border-radius: 25px;
+  max-width: 80%;
+  margin-top: 22.5%;
 }
-
-#jumbotronSearch, #signUpJumbo {
-}
-
 
 #loginJumbo {
   background-color: rgba(179, 231, 193, 0.6);
   border-radius: 25px;
   max-width: 80%;
+  margin-top: 5.7%;
 }
 
 #browseSpan {
@@ -203,10 +203,6 @@
   font-weight: 500;
 }
 
-.collage {
- margin-left: 15%;
-}
-
 #logo {
   width: 100%;
   margin-left: -40%;
@@ -220,17 +216,30 @@
   margin-top: 15%;
 }
 
-#mainLogo {
+#mainLogo, #createAccountMainLogo {
   width: 100vw;
   overflow: hidden;
 }
 
-#mainImg {
+#mainImg, #createAccountMainImage {
   width: 100%;
   margin-top: -43%;
 }
 
-#imgPlease {
+#imgPlease, #createAccountImgPlease {
   width: 100%;
   overflow: hidden;
+}
+
+#createAccountLogoDiv {
+  width: 50%;
+}
+
+#createAccountLoginDiv {
+  width: 100vw;
+  overflow: hidden;
+}
+
+#browseJumboDiv {
+  padding-top: 5%;
 }
