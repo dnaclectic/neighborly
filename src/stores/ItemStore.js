@@ -29,7 +29,8 @@ export default class ItemStore {
         description: item.description,
         category: item.category,
         url: item.url,
-        owner: item.owner
+        owner: item.owner,
+        email: item.owner.email
       })
     })
     .then(function(result) {

@@ -20,6 +20,7 @@
   "author": "Montana Code School",
   "license": "MIT",
   "dependencies": {
+    "babel-plugin-transform-object-assign": "^6.22.0",
     "babel-polyfill": "^6.23.0",
     "body-parser": "^1.17.1",
     "bootstrap": "^4.0.0-alpha.6",

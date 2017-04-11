@@ -57,7 +57,7 @@ export default class UserStore {
     .then(loginCred => {
       if (loginCred.success && loginCred.token){
 
-        browserHistory.push('/');
+        browserHistory.push('/Account');
         this.loggedInUser = true;
         this.email = loginCred.email;
         this.name = loginCred.name;

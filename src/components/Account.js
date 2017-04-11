@@ -54,7 +54,7 @@ class Account extends React.Component {
         <Grid>
           <Jumbotron style={{backgroundColor:"transparent"}}>
             <Flex align="left">
-              <Box>
+              <Box col={3} p={3}>>
                 <Media>
                   <Media style={{width:"2%", paddingRight:"20"}} object src="../images/profile.png"
                   alt="Profile Picture"/>

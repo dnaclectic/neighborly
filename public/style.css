@@ -1,3 +1,9 @@
+.Hoods {
+   font-family: ‘Roboto’, sans-serif;
+   font-size: 60px;
+   background-position: center;
+ }
+
 #main {
   background-color: black;
 }
@@ -19,10 +25,6 @@
   font-size: 2.0vw;
 }
 
-#signUpForm {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 #navHome {
  font-family: ‘Roboto’, sans-serif;
@@ -30,48 +32,99 @@
  float: left;
  color: black;
 }
+
+#navNeighbors {
+ font-family: ‘Roboto’, sans-serif;
+ font-size: 10px;
+ float: left;
+ color: black;
+}
+
 #navBrowse {
  font-family: ‘Roboto’, sans-serif;
  font-size: 10px;
  float: left;
  color: black;
 }
+
+
 #navAccount{
  font-family: ‘Roboto’, sans-serif;
  font-size: 10px;
  float: right;
  color: black;
 }
+
 #navLogin{
  font-family: ‘Roboto’, sans-serif;
  font-size: 10px;
  float: right;
  color: black;
 }
-#navNeighbors{
- font-family: ‘Roboto’, sans-serif;
- font-size: 10px;
- float: right;
- color: black;
+
+#main {
+  background-color: black;
+}
+
+#nav-margin {
+  background-color: transparent;
+}
+
+#navBarHeader {
+  background-color: ;
+}
+
+#nav {
+  background-color: ;
+}
+
+#loginForm {
+  font-size: 2.0vw;
+}
+
+#signUpForm {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
 .flexcontainer {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
-#jumbotronSearch, #loginJumbo, #signUpJumbo {
+#signUpJumbo {
   border-radius: 25px;
-  background-color: #F0F1F5;
-  opacity: .5;
+  max-width: 80%;
+}
+
+#jumbotronSearch {
+  width: 100vw;
+  margin-top: 10%;
+}
+
+#jumbotronSearch, #signUpJumbo {
+}
+
+
+#loginJumbo {
+  background-color: rgba(179, 231, 193, 0.6);
+  border-radius: 25px;
+  max-width: 80%;
 }
 
 #browseSpan {
     font-family: 'Bitter', sans-serif;
     font-size: 4.0vw;
   }
+
 
 #spanLogin, #spanSignUp {
   font-family: 'Bitter', sans-serif;
@@ -83,7 +136,7 @@
   }
 
 #outerCard {
-  background-color: transparent;
+  background-color: rgba(116, 240, 150, 0.5);
   text: #141823 ;
   line spacing: -0.15px;
   line-height: 16px;
@@ -93,6 +146,8 @@
 #cardImg {
   border-radius: 25px;
   padding-bottom: 10px;
+  width: 300px;
+  height: 300px;
 }
 
 #innerCard {
@@ -104,9 +159,8 @@
 #cardTitle {
   margin-left: 20px;
   color: #141823;
-  font-weight: 500;
   font-family: 'Bitter';
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #cardSubtitle {
@@ -150,5 +204,33 @@
 }
 
 .collage {
-  margin-left: 15%;
+ margin-left: 15%;
+}
+
+#logo {
+  width: 100%;
+  margin-left: -40%;
+}
+
+#logoDiv {
+  width: 50%;
+}
+
+#loginDiv {
+  margin-top: 15%;
+}
+
+#mainLogo {
+  width: 100vw;
+  overflow: hidden;
+}
+
+#mainImg {
+  width: 100%;
+  margin-top: -43%;
+}
+
+#imgPlease {
+  width: 100%;
+  overflow: hidden;
 }

@@ -26,10 +26,10 @@ export default {
       {test: /\.js$/, loader: 'babel-loader', exclude: [/node_modules/]},
       {test: /(\.css)$/, use:[{loader: 'style-loader'}, {loader: 'css-loader'}]},
       {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader'},
-      {test: /\.(woff|woff2)$/, loader: 'url-loader',
+      {test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/, loader: 'url-loader',
         options: {
           prefix: 'font/',
-          limit: '5000'
+          limit: '10000'
         }
       },
       {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url-loader',

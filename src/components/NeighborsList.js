@@ -10,7 +10,7 @@ NeighborsList.propTypes = {
 };
 
 function NeighborsList(props) {
-  let addedUsers = props.newUser.map(function(users) {
+  let addedUsers = props.userStore.map(function(users) {
     return (
       <Card block key={users._id}>
         <CardImg top width="100%" src={"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvYsLi4rTkCeFnOwk70fQfecW6g1mBRKgE4hNPsc3QdFCQmaJoH-8xVuQ"} rounded alt="Card image cap"/>

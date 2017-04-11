@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import UserStore from './stores/UserStore';
 import ItemStore from './stores/ItemStore';
 import { Provider } from 'mobx-react';
@@ -19,9 +19,7 @@ let itemStore = new ItemStore();
 render((
   <Provider userStore={userStore} itemStore={itemStore}>
     <Router history={browserHistory}>
-      <Route path="/" component={Main}>
-        <IndexRoute component={Login}/>
-      </Route>
+      <Route path="/" component={Main}/>
         <Route path="/Login" component={Login}/>
         <Route path="/NewUser" component={NewUser}/>
         <Route path="/Browse" component={Browse}/>

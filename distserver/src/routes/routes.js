@@ -91,6 +91,14 @@ router.route('/user').post(function (req, res, next) {
       res.json(user);
     }
   });
+}).get(function (req, res, next) {
+  _userSchema2.default.find().exec(function (err, user) {
+    if (err) {
+      next(err);
+    } else {
+      res.json({ name: user.name, id: user._id, neighborhood: user.neighborhood });
+    }
+  });
 });
 
 router.post('/authenticate', function (req, res, next) {

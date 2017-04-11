@@ -5,6 +5,7 @@ import ItemList from './ItemList';
 import Navigation from './Navigation';
 import { CardColumns, Form, FormGroup, Input, Label } from "reactstrap";
 import { Flex } from 'reflexbox';
+import '../../public/style.css';
 
 class Browse extends React.Component {
   constructor(props) {
@@ -79,36 +80,36 @@ class Browse extends React.Component {
         <div>
           <Navigation/>
         </div>
-
-        <div style={{paddingTop:"200px"}}>
+        <div>
           <Grid>
             <Flex align="center" justify="center">
               <Jumbotron id="jumbotronSearch">
                 <div>
                   <Flex align="center" justify="center">
                     <span id="browseSpan">Browse Available Items</span>
-                  </Flex>
+                    </Flex>
                 </div>
 
-                  <Form>
-                    <Flex align="center" justify="center">
-                      <FormGroup  style={{width: "65%"}}>
-                        <Label id="Search">SEARCH</Label>
-                        <Input onChange={this.handleFilterTextInputChange}
-                        type="text"    state="success"
+                <Form>
+                  <Flex align="center" justify="center">
+                    <FormGroup  style={{width: "70%"}}>
+                      <Label id="Search">SEARCH</Label>
+                      <Input onChange={this.handleFilterTextInputChange} type="text" state="success"
                         placeholder="Power Tools, Gardening, Hobby, Recreation, Kitchen"
                         value={this.state.filterText} />
-                      </FormGroup>
-                    </Flex>
+                    </FormGroup>
+                </Flex>
+                <Flex align="center" justify="center">
 
-                  <div>
-                    <Flex align="start" justify="center">
-                      <Button onClick={this.searchItems}
-                       className="btn btn-primary btn-lg" id="searchBtn">Search
-                      </Button>
-                    </Flex>
-                  </div>
-                </Form>
+                    <div>
+                      <Flex align="start" justify="center">
+                        <Button onClick={this.searchItems}
+                         className="btn btn-primary btn-lg" id="searchBtn">Search
+                        </Button>
+                      </Flex>
+                    </div>
+              </Flex>
+              </Form>
               </Jumbotron>
             </Flex>
           </Grid>

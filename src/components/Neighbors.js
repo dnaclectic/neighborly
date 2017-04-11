@@ -29,7 +29,7 @@ class Neighbors extends React.Component {
           <Grid>
             <Jumbotron style={{ backgroundColor: '#D1D5D8' }}>
               <CardColumns>
-                <NeighborsList users={this.props.user}/>
+                <NeighborsList users={this.props.userStore.id}/>
               </CardColumns>
             </Jumbotron>
           </Grid>
